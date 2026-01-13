@@ -146,17 +146,17 @@ mim install "mmpose>=1.3.2"
 
 ### 🎮 How to Use
 
-⚠️ Prerequisite: EduBot Connection
+⚠️ **Prerequisite:** EduBot Connection
 
 Ensure the EduBot is powered on and connected to the same network as your workstation.
 
 
 
-Robot IP: Ensure the IP in robot/follow_controller.py matches the EduBot's Modbus server address.
+**Robot IP:** Ensure the IP in robot/follow_controller.py matches the EduBot's Modbus server address.
 
 
 
-Camera: Connect the Intel RealSense D435i via USB 3.0.
+**Camera:** Connect the Intel RealSense D435i via USB 3.0.
 
 
 
@@ -221,5 +221,6 @@ The system follows a clinical workflow:
 
 
 **Project Type:** Semester Project 2025-2026
+
 
 
