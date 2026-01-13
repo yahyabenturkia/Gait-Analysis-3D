@@ -1,4 +1,4 @@
-\# 🏃‍♂️ 3D Markerless Gait Analysis \& Autonomous Following Robot
+# 🏃‍♂️ 3D Markerless Gait Analysis & Autonomous Following Robot
 
 
 
@@ -6,15 +6,15 @@ A high-precision biomechanical analysis system that follows a subject and extrac
 
 
 
-Developed by engineering students at \*\*ENISO\*\* (National School of Engineers of Sousse).
+Developed by engineering students at **ENISO** (National School of Engineers of Sousse).
 
 
 
-🎓 \*\*Project by:\*\* \[Yahya Ben Turkia](https://github.com/yahya-bt), \[Yasmine Saad](https://github.com/yasmine-saad)
+🎓 **Project by:** [Yahya Ben Turkia](https://github.com/yahya-bt), [Yasmine Saad](https://github.com/yasmine-saad)
 
 
 
-🧑‍🏫 \*\*Supervised by:\*\* \*\*Dr. Lamine Houssein\*\* — PhD in Robotics, Assistant Professor at ENISO
+🧑‍🏫 Supervised by: Dr. Lamine Houssein — PhD in Robotics, Assistant Professor at ENISO
 
 
 
@@ -22,21 +22,21 @@ Developed by engineering students at \*\*ENISO\*\* (National School of Engineers
 
 
 
-\## 🎯 Objective
+## 🎯 Objective
 
 
 
 Design and implement a system capable of:
 
-\- \*\*Markerless Detection:\*\* Identifying a person using \*\*YOLOv8\*\* and tracking 133 keypoints via \*\*MMPose (HRNet)\*\*.
+- **Markerless Detection:** Identifying a person using **YOLOv8** and tracking 133 keypoints via **MMPose (HRNet)**.
 
-\- \*\*3D Reconstruction:\*\* Converting 2D vision data into 3D coordinates using \*\*Intel RealSense D435i\*\* depth alignment.
+- **3D Reconstruction:** Converting 2D vision data into 3D coordinates using **Intel RealSense D435i** depth alignment.
 
-\- \*\*Biomechanical Analysis:\*\* Transforming data into the \*\*Sagittal Plane\*\* to calculate Hip, Knee, and Ankle angles.
+- **Biomechanical Analysis:** Transforming data into the **Sagittal Plane** to calculate Hip, Knee, and Ankle angles.
 
-\- \*\*Signal Integrity:\*\* Applying \*\*Kalman Filtering\*\* and \*\*RTS Smoothing\*\* for clinical-grade data.
+- **Signal Integrity:** Applying **Kalman Filtering** and **RTS Smoothing** for clinical-grade data.
 
-\- \*\*Autonomous Following:\*\* Maintaining a \*\*safe distance (3.0m)\*\* via \*\*Modbus TCP\*\* commands.
+- **Autonomous Following:** Maintaining a **safe distance (3.0m)** via **Modbus TCP** commands.
 
 
 
@@ -44,15 +44,15 @@ Design and implement a system capable of:
 
 
 
-\## 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 
 
-\- 📷 \*\*Intel RealSense D435i\*\* — RGB + Depth Camera
+- 📷 **Intel RealSense D435i** — RGB + Depth Camera
 
-\- 🧍‍♂️ \*\*MMPose \& YOLOv8\*\* — Advanced 2D/3D Pose Estimation
+- 🧍‍♂️ **MMPose & YOLOv8** — Advanced 2D/3D Pose Estimation
 
-\- 🧠 \*\*Python 3.10\*\* with:
+- 🧠 **Python 3.10** with:
 
 &nbsp; - `ultralytics` (YOLOv8)
 
@@ -66,7 +66,7 @@ Design and implement a system capable of:
 
 &nbsp; - `fpdf` (Clinical Report Generation)
 
-\- ⚙️ \*\*Modbus TCP\*\* — Industrial protocol for robot communication
+- ⚙️ **Modbus TCP** — Industrial protocol for robot communication
 
 
 
@@ -74,7 +74,7 @@ Design and implement a system capable of:
 
 
 
-\## 🏗️ Project Structure
+## 🏗️ Project Structure
 
 
 
@@ -82,17 +82,17 @@ Design and implement a system capable of:
 
 ├── camera/
 
-│   └── camera.py                # RealSense alignment \& acquisition
+│   └── camera.py                # RealSense alignment & acquisition
 
 ├── vision/
 
-│   ├── pose\_estimator.py        # 3D reconstruction \& RTS Smoothing
+│   ├── pose_estimator.py        # 3D reconstruction & RTS Smoothing
 
-│   └── GaitAnalyzer.py          # Biomechanical math \& segmentation
+│   └── GaitAnalyzer.py          # Biomechanical math & segmentation
 
 ├── robot/
 
-│   └── follow\_controller.py     # Modbus-based PID distance control
+│   └── follow_controller.py     # Modbus-based PID distance control
 
 ├── utils/
 
@@ -100,11 +100,11 @@ Design and implement a system capable of:
 
 ├── visualisation/
 
-│   └── visualizer.py            # Gait curve \& ROM plotting
+│   └── visualizer.py            # Gait curve & ROM plotting
 
 ├── exporter/
 
-│   └── exporter.py              # PDF Report \& CSV generation
+│   └── exporter.py              # PDF Report & CSV generation
 
 ├── main.py                      # Main supervisor script
 
@@ -114,9 +114,9 @@ Design and implement a system capable of:
 
 ```
 
-\### 🚀 Installation \& Setup
+### 🚀 Installation & Setup
 
-1\. Set up Conda Environment
+1. Set up Conda Environment
 
 This project requires CUDA 12.1 for high-speed pose estimation:
 
@@ -124,11 +124,11 @@ This project requires CUDA 12.1 for high-speed pose estimation:
 
 conda env create -f environment.yml
 
-conda activate gait\_env\_new
+conda activate gait_env_new
 
 ```
 
-2\. Install Pose Engine (MMPose) :
+2. Install Pose Engine (MMPose) :
 
 ```
 
@@ -144,7 +144,7 @@ mim install "mmpose>=1.3.2"
 
 
 
-\### 🎮 How to Use
+### 🎮 How to Use
 
 ⚠️ Prerequisite: EduBot Connection
 
@@ -152,7 +152,7 @@ Ensure the EduBot is powered on and connected to the same network as your workst
 
 
 
-Robot IP: Ensure the IP in robot/follow\_controller.py matches the EduBot's Modbus server address.
+Robot IP: Ensure the IP in robot/follow_controller.py matches the EduBot's Modbus server address.
 
 
 
@@ -160,11 +160,11 @@ Camera: Connect the Intel RealSense D435i via USB 3.0.
 
 
 
-\*\*Execution Steps:\*\*
+**Execution Steps:**
 
 
 
-1\. Launch System:
+1. Launch System:
 
 ```
 
@@ -172,7 +172,7 @@ python main.py
 
 ```
 
-2\. Recording Logic:
+2. Recording Logic:
 
 
 
@@ -184,41 +184,42 @@ python main.py
 
 
 
-3\. View Results: A new folder will be created in curves/ containing your PDF Report, gait graphs, and CSV data.
+3. View Results: A new folder will be created in curves/ containing your PDF Report, gait graphs, and CSV data.
 
 
 
-\### 📊 Methodology
+### 📊 Methodology
 
 The system follows a clinical workflow:
 
 
 
-1\. Pose Projection: Mapping 2D points to 3D space using the Pinhole Camera model.
+1. Pose Projection: Mapping 2D points to 3D space using the Pinhole Camera model.
 
 
 
-2\. Sagittal Alignment: Rotating the 3D skeleton to align with the walking direction.
+2. Sagittal Alignment: Rotating the 3D skeleton to align with the walking direction.
 
 
 
-3\. Filtering: Using the Rauch-Tung-Striebel (RTS) smoother to remove depth noise.
+3. Filtering: Using the Rauch-Tung-Striebel (RTS) smoother to remove depth noise.
 
 
 
-4\. Gait Normalization: Segmenting steps into a 0-100% phase for standard clinical comparison.
+4. Gait Normalization: Segmenting steps into a 0-100% phase for standard clinical comparison.
 
 
 
-\### 🎓 Academic Context
+### 🎓 Academic Context
 
-\*\*Institution:\*\* National School of Engineers of Sousse (ENISO)
-
-
-
-\*\*Major:\*\* Mechatronics Engineering (Méca 3.1)
+**Institution:** National School of Engineers of Sousse (ENISO)
 
 
 
-\*\*Project Type:\*\* Semester Project 2025-2026
+**Major:** Mechatronics Engineering (Méca 3.1)
+
+
+
+**Project Type:** Semester Project 2025-2026
+
 
