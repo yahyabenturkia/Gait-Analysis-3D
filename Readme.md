@@ -81,29 +81,28 @@ Design and implement a system capable of:
 ```text
 
 ├── camera/
-
+│   ├── __init__.py
 │   └── camera.py                # RealSense alignment & acquisition
 
 ├── vision/
-
+│   ├── __init__.py
 │   ├── pose_estimator.py        # 3D reconstruction & RTS Smoothing
-
 │   └── GaitAnalyzer.py          # Biomechanical math & segmentation
 
 ├── robot/
-
+│   ├── __init__.py
 │   └── follow_controller.py     # Modbus-based PID distance control
 
 ├── utils/
-
+│   ├── __init__.py
 │   └── utils.py                 # YOLOv8 Person detection logic
 
 ├── visualisation/
-
+│   ├── __init__.py
 │   └── visualizer.py            # Gait curve & ROM plotting
 
 ├── exporter/
-
+│   ├── __init__.py
 │   └── exporter.py              # PDF Report & CSV generation
 
 ├── main.py                      # Main supervisor script
@@ -221,6 +220,7 @@ The system follows a clinical workflow:
 
 
 **Project Type:** Semester Project 2025-2026
+
 
 
 
