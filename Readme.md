@@ -147,7 +147,7 @@ mim install "mmpose>=1.3.2"
 
 ⚠️ **Prerequisite:** EduBot Connection
 
-Ensure the EduBot is powered on and connected to the same network as your workstation.
+Ensure the EduBot is powered on and connected to your pc via usb cable.
 
 
 
@@ -220,6 +220,7 @@ The system follows a clinical workflow:
 
 
 **Project Type:** Semester Project 2025-2026
+
 
 
 
