@@ -10,7 +10,7 @@ Developed by engineering students at **ENISO** (National School of Engineers of 
 
 
 
-🎓 **Project by:** [Yahya Ben Turkia](https://github.com/yahya-bt), [Yasmine Saad](https://github.com/yasmine-saad)
+🎓 **Project by:** [Yahya Ben Turkia](https://github.com/yahya-bt), [Yasmine Saad](https://github.com/yassmine-saad)
 
 
 
@@ -220,6 +220,7 @@ The system follows a clinical workflow:
 
 
 **Project Type:** Semester Project 2025-2026
+
 
 
 
