@@ -129,9 +129,11 @@ This avoids Conda/Pip conflicts and CUDA-related reinstallation issues.
 
 * Conda: Miniconda or Anaconda already installed
 
-#### 📦 Files Provided
+#### 📦 Files 
 
-* **gait_env_new.tar.gz** → Fully packaged Conda environment
+* **gait_env_new.tar.gz** → The packaged Conda environment (`gait_env_new.tar.gz`) is **too large for GitHub**, so please download it from the link below:
+
+**Download link:** [Google Drive - gait_env_new.tar.gz](https://drive.google.com/file/d/1YZhldUfOMBrwaKC3vU4lPZU70cwi67cf/view?usp=sharing)
 
 * **Project source code** (this repository)
 
@@ -270,6 +272,7 @@ The system follows a clinical workflow:
 
 
 **Project Type:** Semester Project 2025-2026
+
 
 
 
