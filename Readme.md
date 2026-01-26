@@ -113,36 +113,85 @@ Design and implement a system capable of:
 
 ```
 
-### 🚀 Installation & Setup
+### 🚀 Installation & Environment Setup (Reproducible)
+#### ⚠️ Important Note
 
-1. Set up Conda Environment
+To guarantee identical behavior across machines, the development   Conda environment was packaged using conda-pack.
+This avoids Conda/Pip conflicts and CUDA-related reinstallation issues.
 
-This project requires CUDA 12.1 for high-speed pose estimation:
+#### ✅ System Requirements
+
+* Operating System: Windows
+
+* GPU: NVIDIA GPU
+
+* CUDA: Same CUDA version as installed on the development machine
+
+* Conda: Miniconda or Anaconda already installed
+
+#### 📦 Files Provided
+
+* gait_env_new.tar.gz → Fully packaged Conda environment
+
+* Project source code (this repository)
+
+#### 1. Locate the Conda environments directory
+
+Open Anaconda Prompt and run:
+```
+conda env list
 
 ```
+You will see output similar to:
+```
+base    *  C:\Users\USERNAME\miniconda3
+env1       C:\Users\USERNAME\miniconda3\envs\env1
+```
+The Conda environments directory is:
+```
+C:\Users\USERNAME\miniconda3\envs
+```
 
-conda env create -f environment.yml
+#### 2. Create the environment folder:
+Replace the path with the one found in Step 1:
 
+```
+mkdir C:\Users\USERNAME\miniconda3\envs\gait_env_new
+
+```
+#### 3️. Extract the packaged environment
+
+From the directory containing gait_env_new.tar.gz:
+```
+tar -xzf gait_env_new.tar.gz -C  C:\Users\USERNAME\miniconda3\envs\gait_env_new
+```
+#### 4️. Fix internal paths (MANDATORY)
+
+Run once after extraction:
+```
+C:\Users\USERNAME\miniconda3\envs\gait_env_new\Scripts\conda-unpack.exe
+```
+
+⚠️ This step adapts absolute paths to the new machine and is required.
+
+#### 5️. Activate the environment
+```
 conda activate gait_env_new
+```
+#### 6️. Verify the environment
+```
+python --version
+python -c "import torch; print(torch.__version__)"
+python -c "import torch; print(torch.cuda.is_available())"
 
 ```
+Expected:
 
-2. Install Pose Engine (MMPose) :
+* Python 3.10.x
 
-```
+* PyTorch with CUDA support
 
-pip install -U openmim
-
-mim install mmengine
-
-mim install "mmcv>=2.1.0"
-
-mim install "mmpose>=1.3.2"
-
-```
-
-
-
+* True for CUDA availability
 ### 🎮 How to Use
 
 ⚠️ **Prerequisite:** EduBot Connection
@@ -163,7 +212,7 @@ Ensure the EduBot is powered on and connected to your pc via usb cable.
 
 
 
-1. Launch System:
+#### 1. Launch System:
 
 ```
 
@@ -171,7 +220,7 @@ python main.py
 
 ```
 
-2. Recording Logic:
+#### 2. Recording Logic:
 
 
 
@@ -183,7 +232,8 @@ python main.py
 
 
 
-3. View Results: A new folder will be created in curves/ containing your PDF Report, gait graphs, and CSV data.
+#### 3. View Results: 
+A new folder will be created in curves/ containing your PDF Report, gait graphs, and CSV data.
 
 
 
@@ -220,6 +270,7 @@ The system follows a clinical workflow:
 
 
 **Project Type:** Semester Project 2025-2026
+
 
 
 
