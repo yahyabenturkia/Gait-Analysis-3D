@@ -131,9 +131,9 @@ This avoids Conda/Pip conflicts and CUDA-related reinstallation issues.
 
 #### 📦 Files Provided
 
-* gait_env_new.tar.gz → Fully packaged Conda environment
+* **gait_env_new.tar.gz** → Fully packaged Conda environment
 
-* Project source code (this repository)
+* **Project source code** (this repository)
 
 #### 1. Locate the Conda environments directory
 
@@ -270,6 +270,7 @@ The system follows a clinical workflow:
 
 
 **Project Type:** Semester Project 2025-2026
+
 
 
 
