@@ -95,7 +95,7 @@ PyTorch matching your CUDA version from
 ---
 
 ## Repository
----
+```
 camera/ RealSense alignment and acquisition
 vision/ 3D reconstruction, RTS smoothing, biomechanical maths
 robot/ Modbus following controller
@@ -104,7 +104,7 @@ visualisation/ gait curve and ROM plotting
 exporter/ PDF report and CSV generation
 Output example/ sample reports, curves and plots
 main.py supervisor script
----
+```
 
 ---
 
